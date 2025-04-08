@@ -31,7 +31,7 @@ const Projectpage = () => {
       {/* Project List */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Graphic Projects */}
-        {activeTab === 'graphic' && graphicProjects.map((project, index) => (
+        {activeTab === 'graphic' && graphicProjects.length > 0 && graphicProjects.map((project, index) => (
           <a 
             key={index}
             href={project.link}
@@ -58,7 +58,7 @@ const Projectpage = () => {
         ))}
 
         {/* Web Projects */}
-        {activeTab === 'web' && webProjects.map((project, index) => (
+        {activeTab === 'web' && webProjects.length > 0 && webProjects.map((project, index) => (
           <a 
             key={index}
             href={project.link}
@@ -79,26 +79,28 @@ const Projectpage = () => {
         ))}
       </div>
 
-      {/* Dynamic Link based on activeTab */}
-      <h3 className="text-sm mt-6 text-gray-400">
-        {activeTab === 'graphic' ? (
-          <>You can see more of my projects on <a 
-            target='_blank'
-            href="https://www.behance.net/laibaashfaq22" 
-            className="text-blue-400 hover:underline"
-          >
-            Behance
-          </a>.</>
-        ) : (
-          <>You can see more of my projects on <a 
-            target='_blank'
-            href="https://github.com/laibaashfaq1"
-            className="text-blue-400 hover:underline"
-          >
-            GitHub
-          </a>.</>
-        )}
-      </h3>
+      {/* Show the link only if projects exist */}
+      {(graphicProjects.length > 0 || webProjects.length > 0) && (
+        <h3 className="text-sm mt-6 text-gray-400">
+          {activeTab === 'graphic' ? (
+            <>You can see more of my projects on <a 
+              target='_blank'
+              href="https://www.behance.net/laibaashfaq22" 
+              className="text-blue-400 hover:underline"
+            >
+              Behance
+            </a>.</>
+          ) : activeTab === 'web' ? (
+            <>You can see more of my projects on <a 
+              target='_blank'
+              href="https://github.com/laibaashfaq1"
+              className="text-blue-400 hover:underline"
+            >
+              GitHub
+            </a>.</>
+          ) : null}
+        </h3>
+      )}
     </div>
   )
 }
