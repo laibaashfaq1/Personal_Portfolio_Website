@@ -20,14 +20,14 @@ const Education = () => {
           <p className="text-sm text-gray-400">
             Advanced Graphic Design | Ux /Ui Design 
           </p>
-          <p className="text-sm text-gray-500 mt-2">2022</p>
+          <p className="text-sm text-gray-500 mt-2">Nov/2022-April/2023</p>
         </div>
         <div className="p-4 bg-gray-800 rounded-lg shadow border border-gray-800">
           <h3 className="font-semibold text-white">Digi SKill</h3>
           <p className="text-sm text-gray-400">
             Graphic Design
           </p>
-          <p className="text-sm text-gray-500 mt-2">2024 - Ongoing</p>
+          <p className="text-sm text-gray-500 mt-2">Nov/2022-April/2023</p>
         </div>
         {/* College */}
         <div className="p-4 bg-gray-800 rounded-lg shadow border border-gray-800">
