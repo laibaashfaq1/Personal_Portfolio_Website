@@ -27,7 +27,7 @@ const Education = () => {
           <p className="text-sm text-gray-400">
             Graphic Design
           </p>
-          <p className="text-sm text-gray-500 mt-2">Nov/2022-April/2023</p>
+          <p className="text-sm text-gray-500 mt-2">Nov/2022-January/2023</p>
         </div>
         {/* College */}
         <div className="p-4 bg-gray-800 rounded-lg shadow border border-gray-800">
