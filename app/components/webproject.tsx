@@ -5,7 +5,7 @@ export const webProjects = [
       title: "Travel Blog Website", 
       description: "A fully responsive blog site for travelers.",
       tags: ["Typescript", "Javascript", "Tailwind CSS", "Content Management"],
-      link: "https://travel-blog.vercel.app"
+      link: "https://travel-website-phi-two.vercel.app/"
     },
     { 
       title: "Hackaton Milestone", 
