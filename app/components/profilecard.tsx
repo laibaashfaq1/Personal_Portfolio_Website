@@ -9,11 +9,11 @@ import Ctabutton from './Ctabutton'
 
 const ProfileCard = () => {
   return (
-    <main className='bg-[#0F172A] py-8'>
-      <div className='flex items-center justify-between text-[#E2E8F0] p-6 rounded-lg shadow-lg max-w-2xl mx-auto border border-gray-800 mt-2'>
-        
+    <main className='bg-[#0F172A] py-8 px-4'>
+      <div className='flex flex-col md:flex-row items-center md:items-start justify-between text-[#E2E8F0] p-6 rounded-lg shadow-lg max-w-2xl mx-auto border border-gray-800 mt-2'>
+
         {/* Left Side Text Content */}
-        <div className='md:w-2/3'>
+        <div className='w-full md:w-2/3 text-center md:text-left'>
           <h1 className='text-3xl font-bold text-white'>Laiba Ashfaq Ahmed</h1>
           <p className='mt-1 font-normal text-blue-400'>
             <Typewriter
@@ -27,29 +27,27 @@ const ProfileCard = () => {
             />
           </p>
 
-          <p className="mt-2 flex items-center gap-2 text-gray-500 text-sm">
+          <p className="mt-2 flex justify-center md:justify-start items-center gap-2 text-gray-500 text-sm">
             <AiOutlineGlobal /> Based in Karachi, Pakistan 🇵🇰
           </p>
 
-          {/* Social Icons */}
-          <div className="mt-2 flex gap-2">
+          <div className="mt-2 flex justify-center md:justify-start gap-2">
             <SocialMediaIcon />
           </div>
 
-          {/* CTA Buttons */}
-          <div>
-           <Ctabutton/>
+          <div className="mt-3 flex justify-center md:justify-start">
+            <Ctabutton />
           </div>
         </div>
 
         {/* Right Side (Profile Image) */}
-        <div className="w-28 h-28 mt-4 md:mt-0">
+        <div className="mt-6 md:mt-0 md:ml-4">
           <Image
             src="/me.png"
             alt="Profile Picture"
             width={112}
             height={112}
-            className="rounded-lg border border-gray-500"
+            className="rounded-lg border border-gray-500 object-cover"
           />
         </div>
       </div>
