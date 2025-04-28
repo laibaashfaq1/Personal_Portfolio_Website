@@ -11,7 +11,7 @@ const Education = () => {
           <p className="text-sm text-gray-400">
             Learning Artificial Intelligence, Web 3.0 & Metaverse
           </p>
-          <p className="text-sm text-gray-500 mt-2">2024 - Ongoing</p>
+          <p className="text-sm text-gray-500 mt-2">2023 - Ongoing</p>
         </div>
 
         {/* Graphic Course */}
